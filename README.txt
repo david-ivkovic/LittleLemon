@@ -1,0 +1,12 @@
+API endpoints to test:
+- GET /menu/
+- POST /menu/
+- GET /menu/1
+- PUT /menu/1
+- DELETE /menu/1
+- GET /restaurant/booking/tables/
+- POST /restaurant/booking/tables/
+- POST /auth/users/           (register new user)
+- POST /auth/token/login/     (login, returns token)
+- POST /auth/token/logout/    (logout, header: Authorization: Token <your_token>)
+- GET /protected-message/     (test authentication, needs Bearer token)
