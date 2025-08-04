@@ -4,8 +4,8 @@ from restaurant.serializers import MenuItemSerializer
 
 class MenuViewTest(TestCase):
     def setUp(self):
-        Menu.objects.create(title="IceCream", price=80, inventory=100)
-        Menu.objects.create(title="Cake", price=100, inventory=50)
+        Menu.objects.create(Title="IceCream", Price=80, Inventory=100)
+        Menu.objects.create(Title="Cake", Price=100, Inventory=50)
 
     def test_get_all(self):
         items = Menu.objects.all()

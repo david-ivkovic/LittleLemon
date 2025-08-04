@@ -3,5 +3,5 @@ from restaurant.models import Menu
 
 class MenuTest(TestCase):
     def test_str_method(self):
-        item = Menu.objects.create(title="IceCream", price=80, inventory=100)
+        item = Menu.objects.create(Title="IceCream", Price=80, Inventory=100)
         self.assertEqual(str(item), "IceCream : 80")
