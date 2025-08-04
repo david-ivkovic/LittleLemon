@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'restaurant',  # Custom app for the restaurant
     'rest_framework',  # Django REST Framework for API support
     'rest_framework.authtoken',  # Token authentication for DRF
+    'djoser',  # Django REST Framework for user management
 ]
 
 MIDDLEWARE = [
@@ -137,5 +138,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
+}
+
+DJOSER = {
+    "USER_ID_FIELD": "username",
+    "SERIALIZERS": {},
+    # Če želiš spreminjati polja ali validacijo, dodaš tu custom serializerje
 }
 

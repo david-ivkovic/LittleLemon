@@ -28,6 +28,8 @@ urlpatterns = [
     path('', include('restaurant.urls')),  # tvoji dosedanji endpointi (users, menu, index)
     path('restaurant/booking/', include(booking_router.urls)),  # /restaurant/booking/tables/
     path('api/', include('restaurant.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
 
 
