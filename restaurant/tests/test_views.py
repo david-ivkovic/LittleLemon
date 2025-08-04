@@ -11,5 +11,4 @@ class MenuViewTest(TestCase):
         items = Menu.objects.all()
         serializer = MenuItemSerializer(items, many=True)
         expected_data = serializer.data
-        # primer preverbe dolžine, da so res 2 elementi
         self.assertEqual(len(expected_data), 2)

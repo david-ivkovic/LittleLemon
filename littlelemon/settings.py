@@ -143,6 +143,5 @@ REST_FRAMEWORK = {
 DJOSER = {
     "USER_ID_FIELD": "username",
     "SERIALIZERS": {},
-    # Če želiš spreminjati polja ali validacijo, dodaš tu custom serializerje
 }
 
